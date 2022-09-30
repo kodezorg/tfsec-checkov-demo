@@ -19,6 +19,7 @@ resource "aws_instance" "bad_example" {
   metadata_options {
      http_tokens = "required"
      }
+  monitoring = true 
   ebs_optimized = true
 
   root_block_device {
@@ -30,7 +31,7 @@ resource "aws_instance" "bad_example" {
     volume_size = 5
     volume_type = "gp2"
     delete_on_termination = false
-    encrypted = false
+    encrypted = true
   }
 }
 
