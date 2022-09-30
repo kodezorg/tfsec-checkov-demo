@@ -34,4 +34,3 @@ resource "aws_instance" "bad_example" {
   }
 }
 
-
