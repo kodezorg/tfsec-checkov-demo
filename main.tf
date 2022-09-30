@@ -18,8 +18,7 @@ resource "aws_instance" "bad_example" {
   instance_type = "t1.micro"
   metadata_options {
      http_tokens = "required"
-     }  
-  monitoring = true
+     }
   ebs_optimized = true
 
   root_block_device {
