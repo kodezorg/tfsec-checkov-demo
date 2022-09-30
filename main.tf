@@ -31,6 +31,6 @@ resource "aws_instance" "bad_example" {
     volume_size = 5
     volume_type = "gp2"
     delete_on_termination = false
-    encrypted = true
+    encrypted = false
   }
 }
